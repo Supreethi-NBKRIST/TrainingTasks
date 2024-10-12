@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outbox {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #0071bd;
+            width: 500px;
+            height: 470px;
+            padding-top: 5px;
+            padding-left: 35px;
+            padding-right: 20px;
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #inbox {
+            background-color: white;
+            width: 460px;
+            height: 350px;
+            padding-left: 20px;
+            border-radius: 10px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .sub {
+            background-color: #0071bd;
+            margin: 5px;
+            margin-left: 10px;
+            width: 425px;
+            height: 40px;
+            align-self: center;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .fl {
+            color: #0071bd;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+</body>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+    const div = document.createElement("div");
+    div.id = "outbox";
+    body.appendChild(div);
+
+    const h2 = document.createElement("h2");
+    h2.innerHTML = "Your path for a successful career!";
+    h2.style.textAlign = 'center';
+    div.appendChild(h2);
+
+    const div1 = document.createElement("div");
+    div1.id = "inbox";
+    div.appendChild(div1);
+
+    const line = document.createElement("br");
+    div1.appendChild(line);
+
+    const span = document.createElement("span");
+    span.className = "fl";
+    span.innerHTML = "Fill in your details below:";
+    div1.appendChild(span);
+
+    const line1 = document.createElement("br");
+    div1.appendChild(line1);
+
+    const line2 = document.createElement("br");
+    div1.appendChild(line2);
+
+    const form = document.createElement("form");
+    div1.appendChild(form);
+
+    const name = document.createElement("input");
+    name.setAttribute("type", "text");
+    name.setAttribute("placeholder", "Enter Name");
+    name.style.width = '400px';
+    form.appendChild(name);
+
+    const email = document.createElement("input");
+    email.setAttribute("type", "email");
+    email.setAttribute("placeholder", "Enter Email");
+    email.style.width = '400px';
+    form.appendChild(email);
+
+    const select = document.createElement("select");
+    select.style.padding = '10px';
+    form.appendChild(select);
+
+    const optgroup = document.createElement("optgroup");
+    select.appendChild(optgroup);
+
+    const opt1 = document.createElement("option");
+    opt1.innerHTML = "+91";
+    optgroup.appendChild(opt1);
+
+    const opt2 = document.createElement("option");
+    opt2.innerHTML = "+14";
+    optgroup.appendChild(opt2);
+
+    const opt3 = document.createElement("option");
+    opt3.innerHTML = "+11";
+    optgroup.appendChild(opt3);
+
+    const mno = document.createElement("input");
+    mno.setAttribute("type", "number");
+    mno.setAttribute("placeholder", "Enter Mobile No");
+    mno.style.width = '305px';
+    form.appendChild(mno);
+
+    const btn = document.createElement("button");
+    btn.innerHTML = "Submit";
+    btn.className = "sub";
+    form.appendChild(btn);
+
+</script>
+</html>
